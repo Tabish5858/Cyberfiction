@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+/* ✅✅*************** Nav Bar ************* ✅✅  */
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 9;
+    padding: 0px 30px;
+}
+#nav>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+#nav>button{
+    padding: 10px 20px ;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+
+/* ✅✅*************** Main Div ************* ✅✅  */
+
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 30%;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 100px;
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ✅✅***************Page ************* ✅✅  */
+
+
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page>h3{
+    position: absolute;
+    left: 5%;
+    top: 59%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.593);
+    
+
+}
+
+#page>h4{
+    position: absolute;
+    left:28.5%;
+    top: 66%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    opacity: 10;
+
+}
+
+
+
+/* ✅✅***************Page 1 ************* ✅✅  */
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+#page1>#righttext{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+#page1>#righttext>h3{
+    font-weight: 400;
+    color: silver;
+}
+#page1>#righttext>h1{
+    line-height: 1.5;
+  font-size: 50px;
+}
+#page1>#lefttext{
+    position: absolute;
+    top: 52%;
+    right: 10%;
+    text-align: right;
+}
+#page1>#lefttext>h1{
+    font-size: 50px;
+    line-height: 1.5;
+}
+#page1>#lefttext>h3{
+ 
+    color: silver;
+    font-weight: 400;
+}
+
+
+/* ✅✅***************Page 2************* ✅✅  */
+
+
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page2>#text1{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+}
+#page2>#text1>h3{
+    color: rgb(88, 84, 84);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#page2>#text1>h1{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+}
+#page2>#text2>p{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    text-align: right;
+}
+
+
+
+
+
+
+/* ✅✅***************Page 3************* ✅✅  */
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page3>#text{
+    position: absolute;
+    top: 50%;
+    right:4%;
+    text-align: end;
+}
+#page3>#text>h3{
+    color: rgb(88, 84, 84);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#page3>#text>h1{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+}
+
